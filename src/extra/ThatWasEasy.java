@@ -14,10 +14,11 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 public class ThatWasEasy extends MouseAdapter {
-
+	
 	public void mouseClicked(MouseEvent arg0) {
 		/* Use the speak method to make the button work. */
-		
+		String say = "That was easy";
+		speak(say);
 	}
 
 	private void speak(String words) {
@@ -30,7 +31,7 @@ public class ThatWasEasy extends MouseAdapter {
 
 	public static void main(String[] args) {
 		new ThatWasEasy();
-
+	
 	}
 
 	public ThatWasEasy() {
